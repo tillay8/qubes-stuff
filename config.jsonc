@@ -1,0 +1,61 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "modules": [
+    {
+      "type": "title",
+      "format": "──Software Information───────────────────────",
+      "outputColor": "title"
+    },
+    {
+      "type": "custom",
+      "key": "Host OS",
+      "format": "{#0}Qubes OS 4.2.3 x86_64",
+    },
+    {
+      "type": "os",
+      "key": "Qube OS"
+    },
+    {
+      "type": "command",
+      "key": "Qube Name",
+      "text": "hostname"
+    },
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "de",
+    "break",
+    {
+      "type": "title",
+      "key":" ",
+      "format": "──Allocated Hardware Information─────────────"
+    },
+    {
+      "type": "custom",
+      "key": "Computer",
+      "format": "{#0}Lenovo Ideapad Slim 16IRL8"
+    },
+    {
+        "type": "command",
+        "text": "lscpu | grep name | cut -c 39-",
+        "key": "CPU"
+    },
+    {
+      "type": "display",
+      "key": "Display",
+    },
+    "memory",
+    "disk",
+    "battery",
+  ],
+  "logo": {
+    "source": "qubes"
+  },
+  "display": {
+    "color": {
+      "keys": "94",
+      "title": "94",
+    }
+  }
+}
