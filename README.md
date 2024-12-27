@@ -22,4 +22,4 @@ in dom0:
 
 and then make a keyboard shortcut in settings that runs 
 
-`/home/$USER/screenshot.sh <qube-to-have-screenshot-on-clipboard`
+`/home/$USER/screenshot.sh <qube-to-have-screenshot-on-clipboard>`
