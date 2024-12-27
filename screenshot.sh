@@ -1,4 +1,4 @@
-QUBE="personal"
+QUBE=$1
 SCREENSHOT="/home/$USER/screenshot.png"
 INCOMING='/home/user/QubesIncoming/dom0/screenshot.png'
 xfce4-screenshooter -r -s $SCREENSHOT
