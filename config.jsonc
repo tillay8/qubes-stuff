@@ -3,13 +3,13 @@
   "modules": [
     {
       "type": "title",
-      "format": "──Software Information───────────────────────",
+      "format": "★──Software Information─────────────────────★",
       "outputColor": "title"
     },
     {
       "type": "custom",
       "key": "Host OS",
-      "format": "{#0}Qubes OS 4.2.3 x86_64",
+      "format": "{#0}Qubes OS 4.2.3 x86_64"
     },
     {
       "type": "os",
@@ -20,16 +20,25 @@
       "key": "Qube Name",
       "text": "hostname"
     },
-    "kernel",
+    {
+      "type": "command",
+      "key": "Kernel",
+      "text": "uname -r | sed 's/\\(.*\\)\\.[^\\.]*$/\\1/'"
+    },
     "uptime",
     "packages",
     "shell",
+    {
+      "type": "command",
+      "key": "ZSH theme",
+      "text": "cat ~/.zshrc | grep -oP 'THEME=\"\\K[^\"]+'"
+    },
     "de",
     "break",
     {
       "type": "title",
       "key":" ",
-      "format": "──Allocated Hardware Information─────────────"
+      "format": "★──Allocated Hardware Information───────────★"
     },
     {
       "type": "custom",
@@ -43,11 +52,12 @@
     },
     {
       "type": "display",
-      "key": "Display",
+      "key": "Display"
     },
     "memory",
     "disk",
     "battery",
+    "localip"
   ],
   "logo": {
     "source": "qubes"
@@ -55,7 +65,7 @@
   "display": {
     "color": {
       "keys": "94",
-      "title": "94",
+      "title": "94"
     }
   }
 }
