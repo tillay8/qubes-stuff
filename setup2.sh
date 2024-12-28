@@ -10,3 +10,4 @@ cd ~/.config/xfce4/xfconf/xfce-perchannel-xml
 wget https://raw.githubusercontent.com/tillay8/qubes-stuff/refs/heads/main/xfce4-terminal.xml
 echo exec zsh > ~/.bashrc
 exec zsh
+cd
