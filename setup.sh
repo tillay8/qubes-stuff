@@ -1,5 +1,6 @@
 
 echo "setting qube $(hostname) to tilley's prefs"
+rm ~/.zshrc
 sudo apt install zsh git
 #sudo dnf install zsh git
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
